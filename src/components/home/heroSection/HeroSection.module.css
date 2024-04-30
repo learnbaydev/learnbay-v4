@@ -1,0 +1,101 @@
+.section {
+  width: 100vw;
+}
+
+.bgWrap {
+  position: absolute;
+  height: 600px !important;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 80px;
+  padding: 140px 0px 0px 0px;
+}
+
+.content h3 {
+  background: linear-gradient(90deg, #f99600 11.01%, #fe5449 100.69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 52px;
+  width: 800px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.65px;
+}
+
+.round {
+  display: flex;
+  gap: 30px;
+  margin: 70px 0px 90px 0px;
+}
+
+.round p {
+  border-radius: 24.231px;
+  font-size: 12px;
+  border: 0.769px solid #fff;
+  background: rgba(217, 217, 217, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 10px 14px;
+}
+
+.buttonDiv {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.playIcon {
+  font-size: 38px;
+  margin-left: 5px;
+}
+
+.iconDiv {
+  background-color: #fd2222;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learnDiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.button {
+  border-radius: 12px;
+  border: 1px solid #fff;
+  background: #f99600;
+  padding: 10px 30px;
+  font-size: 16px;
+  height: fit-content;
+  flex-shrink: 0;
+}
