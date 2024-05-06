@@ -54,7 +54,7 @@ function WhyLearnbay() {
       const leftPosition = 22;
 
       ctx.strokeStyle = "black";
-      ctx.setLineDash([25, 25]);
+      ctx.setLineDash([10, 10]);
       ctx.beginPath();
       ctx.lineWidth = 1;
       ctx.moveTo(leftPosition, 0);

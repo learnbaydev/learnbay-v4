@@ -4,7 +4,7 @@
     rgba(0, 114, 188, 0.1) 0.89%,
     rgba(0, 114, 188, 0) 99.19%
   );
-  padding: 80px 0px;
+  padding: 80px 0px 0px;
 }
 
 .container {
@@ -26,6 +26,7 @@
 .twoContainer {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 80px;
 }
 
 .iconContent {

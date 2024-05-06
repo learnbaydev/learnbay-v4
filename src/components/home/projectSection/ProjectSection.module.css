@@ -1,0 +1,148 @@
+.container {
+  padding: 0px 100px 60px 100px;
+  background: linear-gradient(180deg, #181818 0%, #190f00 95.82%);
+  width: 100vw;
+}
+
+.container h2 {
+  color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  line-height: 153%; /* 107.1px */
+  margin-top: 60px;
+}
+
+.newCont h4 {
+  text-align: center;
+  margin: 90px auto;
+}
+
+.span {
+  color: #a4a4a4;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 42% 3% 42%;
+  grid-gap: 70px;
+  gap: 70px;
+  margin: 40px auto 0px auto;
+  width: 1300px;
+  padding: 0px 120px 0px 120px;
+}
+
+.ProjectSection .InnerBox2 img {
+  border-radius: 10px !important;
+}
+
+.InnerBox1,
+.InnerBox2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.InnerBox1 {
+  gap: 70px;
+}
+
+.InnerBox1 img,
+.InnerBox2 img {
+  width: 100%;
+  height: auto;
+}
+
+.BlueHed {
+  color: #f99600;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 20px 0px 20px 0px;
+}
+
+.para {
+  font-size: 18px;
+  line-height: 28px;
+  color: #444;
+  font-weight: 400;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 5% 92%;
+  gap: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.iconPara {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.BlueHedDomain {
+  color: #fff;
+  font-size: 32px !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.BlueHedDomain span {
+  color: #f99600;
+}
+.greenIcon {
+  margin-top: 5px;
+  color: #20a898;
+}
+
+.newCont {
+  display: grid;
+  grid-template-columns: 22% 55%;
+  margin: auto;
+  width: 1300px;
+}
+
+@media (max-width: 641px) {
+  .container {
+    padding: 50px 20px 30px 20px;
+  }
+
+  .BlueHedDomain {
+    font-size: 22px !important;
+  }
+
+  .container h4 {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .paraP {
+    gap: 10px;
+    font-size: 16px !important;
+  }
+
+  .box {
+    display: block;
+    margin: 0;
+  }
+
+  .InnerBox1,
+  .InnerBox2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .BlueHed {
+    font-size: 22px;
+    margin-left: 5px;
+  }
+  .container {
+    margin-bottom: 10px;
+  }
+}
