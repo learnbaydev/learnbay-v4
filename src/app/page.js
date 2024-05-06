@@ -3,6 +3,9 @@ import styles from "./page.module.css";
 import HeroSection from "@/components/home/heroSection/HeroSection";
 import CompanySection from "@/components/home/companySection/CompanySection";
 import WhyLearnbay from "@/components/home/whyLearnbay/WhyLearnbay";
+import Course from "@/components/home/courseSection/Course";
+import ProjectSection from "@/components/home/projectSection/ProjectSection";
+import DomainSection from "@/components/home/domainSection/DomainSection";
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
       <HeroSection />
       <CompanySection />
       <WhyLearnbay />
+      <Course />
+      <ProjectSection />
+      <DomainSection />
     </main>
   );
 }
