@@ -21,13 +21,11 @@
 
 .orangeBg {
   display: flex;
-  justify-content: center;
-  border-radius: 9.467px;
-  background: linear-gradient(to right, #e8bd7d, #8a5300);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  margin: auto;
-  padding: 10px 0px 30px 0px;
+  justify-content: left;
+  border-radius: 0px 7.707px 7.707px 0px;
+  background: linear-gradient(79deg, #f99600 1.56%, #8a5300 99.22%);
+  width: fit-content;
+  padding: 5px 20px 5px 30px;
 }
 
 .orangeBg > p {
@@ -100,6 +98,7 @@
 .courses {
   background: #ffffff;
   margin-top: 30px;
+  margin-bottom: 70px;
 }
 .listPanel {
   display: flex;
@@ -147,27 +146,32 @@
 }
 .leftSide {
   padding: 0px;
-  background-color: transparent;
   max-height: 510px;
   position: relative;
-  border-radius: 8px;
+  border-radius: 26px;
   width: 33%;
   margin-top: 20px;
   margin-left: 10px;
+  border-radius: 26.974px;
+  border: 2px solid #c1c1c1;
+  background: #fff;
+}
+
+.leftSide:hover {
+  border: 2px solid #e77b16;
 }
 
 .SliderWrap {
   display: flex !important;
   flex-flow: column;
-  border-radius: 8px;
-  background-color: white;
+  border-radius: 26px;
   padding: 0px;
 }
 
 .newSliderWrap {
   display: flex !important;
   flex-flow: column;
-  border-radius: 8px;
+  border-radius: 26px;
   z-index: 10;
   position: relative;
   height: max-content;
@@ -246,14 +250,13 @@
   position: relative;
   flex-flow: column;
   align-items: center;
-  padding: 20px 20px 12px 20px;
   margin-left: 0px;
   background-color: white;
   /* hello */
 }
 .imgWrap {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 26px;
   position: relative;
   z-index: 1;
   height: auto;
@@ -332,7 +335,7 @@
   margin-top: 0px;
 }
 .btnWrapper button {
-  padding: 18px 15px;
+  padding: 10px 15px;
   width: 100%;
   gap: 5px;
   display: flex;
@@ -498,7 +501,7 @@
     justify-content: start;
     padding: 14px 0px 0px 20px;
     border-radius: 0px 7.707px 7.707px 0px;
-background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
+    background: linear-gradient(79deg, #f99600 1.56%, #8a5300 99.22%);
   }
   .leftSide {
     height: 340px !important;
@@ -674,10 +677,10 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
   font-size: 20px;
 }
 
-.zIndex {
+/* .zIndex {
   z-index: 1;
-  margin: -180px 4px 0px 4px;
-}
+  margin: -180px 0px 0px 0px;
+} */
 
 .contButton {
   width: 100%;
@@ -688,7 +691,6 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
   background-color: white;
   border-radius: 20px;
   background: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .green {
@@ -799,9 +801,8 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
   padding: 0px;
   background-color: transparent;
   max-height: 510px;
-  margin-bottom: 20px;
   position: relative;
-  border-radius: 8px;
+  border-radius: 26px;
   width: 33%;
   margin-top: 0px;
   margin-left: 10px;
@@ -810,7 +811,7 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
 .SliderWrap {
   display: flex !important;
   flex-flow: column;
-  border-radius: 8px;
+  border-radius: 26px;
   background-color: white;
 }
 .slideWrap {
@@ -820,7 +821,7 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
 .newSliderWrapOrange {
   display: flex !important;
   flex-flow: column;
-  border-radius: 8px;
+  border-radius: 26px;
   z-index: 10;
   position: relative;
   height: max-content; /* Set the height to 100% to ensure it covers the entire parent */
@@ -922,11 +923,9 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
   position: relative;
   flex-flow: column;
   align-items: center;
-  padding: 32px 20px 32px 20px;
+  padding: 20px 20px 30px;
   margin-left: 0px;
   background-color: white;
-  border-radius: 8px;
-  margin-top: -20px;
   /* hello */
 }
 .contButton .imgWrap {
@@ -934,12 +933,14 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
 }
 .imgWrap {
   display: flex;
-
-  height: 214px;
+  margin: 20px 20px 10px;
+  height: 120px;
   background-color: white;
   border-radius: 30px;
   position: relative;
   z-index: 1;
+  border-radius: 13.487px;
+background: rgba(249, 150, 0, 0.33);
 }
 
 .leftSide h6 {
@@ -953,9 +954,10 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
 .headWrapper {
   display: flex;
   flex-flow: column;
-  text-align: center;
-  margin-top: 0px;
-  margin: 30px 0px;
+  text-align: left;
+  margin: -103px 0px 0px 40px;
+  z-index: 1;
+  position: absolute;
 }
 .hr {
   border: 1px solid #efefef;
@@ -1012,12 +1014,13 @@ background: linear-gradient(79deg, #F99600 1.56%, #8A5300 99.22%);
   grid-template-columns: 50% 1% 49%;
   width: 100%;
   gap: 10px;
-  border-radius: 0 0 20px 20px;
   margin-top: 0px;
-  padding: 20px 15px;
+  padding: 0px 20px 0px;
+  margin-bottom: 20px;
+  border-radius: 26px;
 }
 .btnWrapper button {
-  padding: 14px 15px;
+  padding: 10px 15px;
   width: 100%;
   gap: 5px;
   display: flex;

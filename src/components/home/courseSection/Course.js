@@ -307,7 +307,7 @@ const Course = ({
                                           }}
                                           className={styles.imgWrap}
                                         >
-                                          <div className="bgWrap">
+                                          {/* <div className="bgWrap">
                                             <Image
                                               src={img}
                                               fill={true}
@@ -315,14 +315,14 @@ const Course = ({
                                               loading="lazy"
                                               alt="data science course"
                                             />
-                                          </div>
+                                          </div> */}
                                         </a>
                                       ) : (
                                         <a
                                           href={link1}
                                           className={styles.imgWrap}
                                         >
-                                          <div className="bgWrap">
+                                          {/* <div className="bgWrap">
                                             <Image
                                               src={img}
                                               fill={true}
@@ -331,19 +331,19 @@ const Course = ({
                                               objectFit="fill"
                                               alt="data science course"
                                             />
-                                          </div>
+                                          </div> */}
                                         </a>
                                       )}
 
                                       <div className={styles.zIndex}>
                                         <div
                                           className={styles.headWrapper}
-                                          style={
-                                            title === "Master in CS:" ||
-                                            title === "Advance Certification"
-                                              ? { marginTop: "0px" }
-                                              : { marginTop: "0px" }
-                                          }
+                                          // style={
+                                          //   title === "Master in CS:" ||
+                                          //   title === "Advance Certification"
+                                          //     ? { marginTop: "0px" }
+                                          //     : { marginTop: "0px" }
+                                          // }
                                         >
                                           <h6
                                             className={
@@ -364,21 +364,22 @@ const Course = ({
                                             {title1}
                                           </h6>
                                         </div>
-                                        <div className={styles.orangeBg}>
-                                          <p>{tagHead}</p>
-                                        </div>
+
                                         <div
                                           className={styles.contButton}
                                           style={{
-                                            borderRadius: "8px 8px 8px 8px",
+                                            // borderRadius: "8px 8px 8px 8px",
                                             cursor: "pointer",
 
                                             // marginTop: "-12px",
                                             zIndex: "0",
-                                            boxShadow:
-                                              "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+                                            // boxShadow:
+                                            //   "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                                           }}
                                         >
+                                          <div className={styles.orangeBg}>
+                                            <p>{tagHead}</p>
+                                          </div>
                                           <div className={styles.contentBox}>
                                             {/* <hr className={styles.hr} /> */}
                                             <div className={styles.paraDiv}>
@@ -421,7 +422,7 @@ const Course = ({
                                                 ""
                                               )}
                                             </div>
-                                            <hr className={styles.hr1} />
+                                            {/* <hr className={styles.hr1} /> */}
                                           </div>
                                           <div className={styles.btnWrapper}>
                                             <a
