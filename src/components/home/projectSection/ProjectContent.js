@@ -217,6 +217,126 @@ const ProjectContent = () => {
     );
   };
 
+  const MyCanvasHor2 = () => {
+    const canvasRef = useRef(null);
+    let ctx, canvasWidth, canvasHeight, arrowY;
+    const arrowSize = 15;
+
+    useEffect(() => {
+      const canvas = canvasRef.current;
+      const parentDiv = canvas.parentElement;
+      ctx = canvas.getContext("2d");
+      canvasWidth = parentDiv.clientWidth; // Adjust canvas width here
+      canvasHeight = parentDiv.clientHeight;
+      arrowY = 0;
+
+      canvas.width = canvasWidth;
+      canvas.height = canvasHeight;
+
+      const handleScroll = () => {
+        const canvasRect = canvas.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const scrollTop = window.scrollY || window.pageYOffset;
+
+        if (
+          scrollTop > 3600 &&
+          canvasRect.top - scrollTop < windowHeight / 6 &&
+          canvasRect.bottom > windowHeight / 6
+        ) {
+          window.addEventListener("wheel", handleWheel);
+        } else {
+          window.removeEventListener("wheel", handleWheel);
+        }
+      };
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
+    let leftPosition = 0;
+
+    const handleWheel = (event) => {
+      if (arrowY >= 625 && event.deltaY > 0) {
+        arrowY = 700;
+        leftPosition = Math.min(leftPosition + event.deltaY * 0.5, 800);
+      } else {
+        arrowY += event.deltaY * 1;
+        arrowY = Math.min(Math.max(0, arrowY), canvasHeight - arrowSize);
+      }
+      drawArrow();
+    };
+
+    const drawArrow = () => {
+      ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+      const startX = 630; // Starting X coordinate
+      const startY = 700; // Starting Y coordinate
+
+      let leftPosition = 630;
+
+      ctx.strokeStyle = "#E9E9E9";
+      ctx.setLineDash([5, 5]);
+      ctx.beginPath();
+      ctx.lineWidth = 1;
+      ctx.moveTo(startX, startY);
+      ctx.lineTo(0, startY); // Extend the line to the left edge
+      ctx.moveTo(leftPosition, 0);
+      ctx.lineTo(leftPosition, 700);
+      ctx.stroke();
+
+      ctx.setLineDash([]);
+      ctx.beginPath();
+      ctx.strokeStyle = "#E9E9E9";
+      ctx.lineWidth = 3;
+      if (arrowY >= 700) {
+        ctx.moveTo(startX, startY);
+        ctx.lineTo(0, startY); // Extend the line to the left edge of the canvas
+        ctx.moveTo(leftPosition, 0);
+        ctx.lineTo(leftPosition, arrowY);
+      } else {
+        ctx.moveTo(startX, startY);
+        ctx.lineTo(startX, startY); // Keep the horizontal line as is
+        ctx.moveTo(leftPosition, 0);
+        ctx.lineTo(leftPosition, arrowY);
+      }
+
+      ctx.stroke();
+
+      ctx.fillStyle = "#E9E9E9";
+      ctx.strokeStyle = "#E9E9E9";
+      ctx.beginPath();
+      if (arrowY >= 700) {
+        leftPosition -= 700;
+        ctx.moveTo(leftPosition, arrowY);
+        ctx.lineTo(leftPosition + arrowSize, arrowY + arrowSize / 2); // Extend downwards
+        ctx.lineTo(leftPosition + arrowSize, arrowY - arrowSize / 2); // Point to the right
+      } else {
+        ctx.moveTo(leftPosition, arrowY);
+        ctx.lineTo(leftPosition - arrowSize / 2, arrowY - arrowSize);
+        ctx.lineTo(leftPosition + arrowSize / 2, arrowY - arrowSize);
+      }
+
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+    };
+
+    return (
+      <canvas
+        ref={canvasRef}
+        style={{
+          position: "absolute",
+          // top: "0",
+          left: "140px",
+          width: "100%",
+          // height: "100%",
+        }}
+      ></canvas>
+    );
+  };
+
   return (
     <>
       <div className={styles.newCont}>
@@ -226,35 +346,34 @@ const ProjectContent = () => {
           <span className={styles.span}> ProjectLab</span>
         </h2>
       </div>
+      <MyCanvasHor2 />
       <div className={styles.box}>
-        <div>
-          <div className={styles.InnerBox1}>
-            <div className="imgWrapper">
-              <Image
-                src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/pojectInnovation.webp"
-                loading="lazy"
-                width="528"
-                height="350"
-                alt="profile-Img"
-                onClick={() => videoSHow()}
-              />
-            </div>
-            <div className={styles.iconPara}>
-              <p className={styles.BlueHed}>Project Innovation Lab</p>
-              <p className={styles.para}>
-                <FaCheckCircle className={styles.greenIcon} />
-                Gain real proof of hands-on experience by having your project
-                certified by the industry
-              </p>
-              <p className={styles.para}>
-                <FaCheckCircle className={styles.greenIcon} />
-                Make your past experiences count with domain specialisation and
-                Project certification
-              </p>
-            </div>
+        <div className={styles.InnerBox1}>
+          <div className="imgWrapper">
+            <Image
+              src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/pojectInnovation.webp"
+              loading="lazy"
+              width="528"
+              height="350"
+              alt="profile-Img"
+              onClick={() => videoSHow()}
+            />
+          </div>
+          <div className={styles.iconPara}>
+            <p className={styles.BlueHed}>Project Innovation Lab</p>
+            <p className={styles.para}>
+              <FaCheckCircle className={styles.greenIcon} />
+              Gain real proof of hands-on experience by having your project
+              certified by the industry
+            </p>
+            <p className={styles.para}>
+              <FaCheckCircle className={styles.greenIcon} />
+              Make your past experiences count with domain specialisation and
+              Project certification
+            </p>
           </div>
         </div>
-        <MyCanvas />
+        <div></div>
         <div className={styles.InnerBox2}>
           <div className={styles.iconPara}>
             <p className={styles.BlueHed}>Project Certification from IBM</p>
@@ -286,6 +405,9 @@ const ProjectContent = () => {
           </div>
         </div>
       </div>
+      {/* <div>
+        <MyCanvasHor2 />
+      </div> */}
     </>
   );
 };
