@@ -16,7 +16,6 @@
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  background-color: #0072bc;
 }
 
 .orangeBg {
@@ -28,7 +27,25 @@
   padding: 5px 20px 5px 30px;
 }
 
-.orangeBg > p {
+.GreenBg {
+  display: flex;
+  justify-content: left;
+  border-radius: 0px 7.707px 7.707px 0px;
+  background: linear-gradient(79deg, #04C988 1.56%, #023353 99.22%);
+  width: fit-content;
+  padding: 5px 20px 5px 30px;
+}
+
+.blueBg {
+  display: flex;
+  justify-content: left;
+  border-radius: 0px 7.707px 7.707px 0px;
+background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
+  width: fit-content;
+  padding: 5px 20px 5px 30px;
+}
+
+.orangeBg > p, .blueBg > p, .GreenBg > p {
   color: #fff !important;
   font-size: 17px !important;
   font-weight: 600 !important;
@@ -940,7 +957,7 @@
   position: relative;
   z-index: 1;
   border-radius: 13.487px;
-background: rgba(249, 150, 0, 0.33);
+  background: rgba(249, 150, 0, 0.33);
 }
 
 .leftSide h6 {
@@ -1068,9 +1085,8 @@ background: rgba(249, 150, 0, 0.33);
   font-weight: 700;
   margin: 0;
   margin-left: 15px;
-  background: linear-gradient(90deg, #8d5603 0.76%, #000 24.77%);
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
 

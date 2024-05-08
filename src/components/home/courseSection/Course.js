@@ -250,15 +250,55 @@ const Course = ({
           </div>
           <div>
             {courseArray.map((courseDetail, index) => {
-              const { courses } = courseDetail;
+              const { courses, blueBox } = courseDetail;
               return CourseLoop[index].value ? (
                 <div key={index}>
                   {courses.map((courseDetail, index) => {
                     return (
                       <div key={index} className={styles.divBox}>
                         <div className={styles.viewAll}>
-                          <div className={styles.bigBox}></div>
-                          <h5 className={styles.h5font}>
+                          <div
+                            className={styles.bigBox}
+                            style={
+                              courseDetail.courseName ===
+                              "Domain Certification Courses"
+                                ? { background: "#F99600" }
+                                : courseDetail.courseName ===
+                                  "Data Science Courses"
+                                ? { background: "#0072BC" }
+                                : courseDetail.courseName ===
+                                  "Our Certification Courses"
+                                ? { background: "#0072BC" }
+                                : { background: "#04C988" }
+                            }
+                          ></div>
+                          <h5
+                            className={styles.h5font}
+                            style={
+                              courseDetail.courseName ===
+                              "Domain Certification Courses"
+                                ? {
+                                    background:
+                                      "linear-gradient(90deg, #8d5603 0.76%, #000 24.77%)",
+                                  }
+                                : courseDetail.courseName ===
+                                  "Our Certification Courses"
+                                ? {
+                                    background:
+                                      "linear-gradient(90deg, #000 0.76%, #004B96 24.77%)",
+                                  }
+                                : courseDetail.courseName ===
+                                  "Data Science Courses"
+                                ? {
+                                    background:
+                                      "linear-gradient(90deg, #000 0.76%, #004B96 24.77%)",
+                                  }
+                                : {
+                                    background:
+                                      "linear-gradient(90deg, #000 0.76%, #898989 24.77%)",
+                                  }
+                            }
+                          >
                             {courseDetail.courseName}
                           </h5>
                           {/* <h5 className={styles.textView}>View All</h5> */}
@@ -289,6 +329,9 @@ const Course = ({
                                   brochureLinks,
                                   courseTime,
                                   Green,
+                                  orange,
+                                  blue,
+                                  GreenHead,
                                   newDesign,
                                   newDesignOrange,
                                 } = viewAllData;
@@ -377,7 +420,18 @@ const Course = ({
                                             //   "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
                                           }}
                                         >
-                                          <div className={styles.orangeBg}>
+                                          <div
+                                            //  className={styles.orangeBg}
+                                            className={
+                                              GreenHead
+                                                ? styles.GreenBg
+                                                : orange
+                                                ? styles.orangeBg
+                                                : blue
+                                                ? styles.blueBg
+                                                : styles.mainHead
+                                            }
+                                          >
                                             <p>{tagHead}</p>
                                           </div>
                                           <div className={styles.contentBox}>

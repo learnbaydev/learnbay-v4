@@ -28,7 +28,7 @@ function DomainSection() {
         const scrollTop = window.scrollY || window.pageYOffset;
 
         if (
-          scrollTop > 4500 &&
+          scrollTop > 4250 &&
           canvasRect.top - scrollTop < windowHeight / 6 &&
           canvasRect.bottom > windowHeight / 6
         ) {
@@ -53,7 +53,7 @@ function DomainSection() {
     const drawArrow = () => {
       ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
-      const leftPosition = 22;
+      const leftPosition = 28;
 
       ctx.strokeStyle = "#E9E9E9";
       ctx.setLineDash([10, 10]);
