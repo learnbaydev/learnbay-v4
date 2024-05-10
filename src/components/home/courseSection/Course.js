@@ -1,19 +1,17 @@
 "use client";
 import dynamic from "next/dynamic";
-import Image from "next/image";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BiTimeFive } from "react-icons/bi";
 import { BsCheckLg, BsFire } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./Course.module.css";
-import { courseDetails, courseDetailsM } from "./courseDetails";
-const Popup = dynamic(() => import("@/components/global/Popup/Popup"));
-const Form = dynamic(() => import("@/components/global/Form/Form"));
+import { courseDetails, courseDetailsM } from "./CourseDetails";
+const Popup = dynamic(() => import("@/components/global/popup/Popup"));
+const Form = dynamic(() => import("@/components/global/form/Form"));
 
 const Course = ({
   dataScience,

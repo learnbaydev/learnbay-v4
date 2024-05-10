@@ -1,7 +1,7 @@
-import React from "react";
 import dynamic from "next/dynamic";
-const Popup = dynamic(() => import("@/components/global/Popup/Popup"));
-const Form = dynamic(() => import("@/components/global/Form/Form"));
+import React from "react";
+const Popup = dynamic(() => import("@/components/global/popup/Popup"));
+const Form = dynamic(() => import("@/components/global/form/Form"));
 
 const PopupContent = ({
   dataScience,

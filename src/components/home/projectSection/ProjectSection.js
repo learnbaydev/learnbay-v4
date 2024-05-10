@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import styles from "./ProjectSection.module.css";
 const ProjectContent = dynamic(() => import("./ProjectContent"));
 const PopupContent = dynamic(() =>
-  import("@/components/global/PopupContent/PopupContent")
+  import("@/components/global/popupContent/PopupContent")
 );
 
 const ProjectSection = ({
