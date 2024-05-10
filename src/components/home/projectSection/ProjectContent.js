@@ -329,8 +329,8 @@ const ProjectContent = () => {
         style={{
           position: "absolute",
           // top: "0",
-          left: "140px",
-          width: "100%",
+          left: "230px",
+          width: "-webkit-fill-available",
           // height: "100%",
         }}
       ></canvas>

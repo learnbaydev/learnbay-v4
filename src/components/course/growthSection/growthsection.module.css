@@ -1,0 +1,68 @@
+.GrowthSection {
+  margin: 72px 160px 60px 240px;
+}
+.GrowthSection h2 {
+  color: #a4a4a4;
+
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 84.15px */
+  margin: 0;
+  margin-right: 100px;
+}
+.GrowthSection p {
+  color: #000;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 153%; /* 36.72px */
+  margin: 30px 0 0 0;
+  /* max-width:62%; */
+  /* margin: 0; */
+}
+
+.downconent {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 100px;
+}
+.leftinside {
+  padding: 20px;
+    margin-top: 82px;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+.demanddiv {
+    border-radius: 20.047px;
+    border: 0.467px solid #afafaf;
+    background: #fff;
+    box-shadow: 0px 0px 15.707px 0px rgba(146, 146, 146, 0.5);
+    padding: 15px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+  
+}
+.GrowthSection h4 {
+    color: #636363;
+font-size: 26.722px;
+font-style: normal;
+font-weight: 600;
+line-height: 153%; /* 50.064px */
+margin: 0;
+}
+
+.box{
+    border-radius: 21.503px;
+    background: linear-gradient(126deg, #0072BC 8.92%, #003456 88.07%);
+    box-shadow: 0px 0px 11.219px 0px rgba(0, 114, 188, 0.34);
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+}

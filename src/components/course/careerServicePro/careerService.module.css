@@ -1,0 +1,150 @@
+.promain {
+  background-image: linear-gradient(to bottom, #808080, #000000);
+  margin: 0;
+  padding: 10px 0px;
+}
+.headline {
+  margin: 0 0 0 240px;
+  padding-top: 30px;
+}
+.headline h4 {
+  color: #eed182;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 153%; /* 42.84px */
+  margin: 0;
+}
+.headline h2 {
+  color: #e1e1e1;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 153%;
+  margin: 0;
+}
+
+.proHead {
+  margin: 40px 160px 60px 240px;
+  display: grid;
+  grid-template-columns: 50% 40%;
+  align-items: center;
+  gap: 200px;
+}
+
+.proleftside {
+  display: flex;
+  grid-template-columns: 50% 50%;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.proleftside h5 {
+  color: #fff;
+  font-size: 23.611px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 153%; /* 39.185px */
+  margin: 0;
+}
+
+.proleftside p {
+  color: #fff;
+  font-size: 14.293px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 153%; /* 27.989px */
+}
+
+.leftcontent {
+  margin-top: 20px;
+  margin-bottom: 46px;
+}
+
+.hrline {
+  border: none;
+  height: 0.4px; /* Specify the height of the line */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 12.07%,
+    #fff 84.52%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Apply the provided gradient */
+}
+
+.hline {
+  border: none;
+  width: 1px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 12.07%,
+    #fff 84.52%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Apply the provided gradient */
+}
+
+.icons {
+  border-radius: 9.147px;
+  /* background: linear-gradient(180deg, #0072bc 0%, #003456 100%); */
+  padding: 10px;
+  font-size: 30px;
+  color: #e1e1e1;
+  font-weight: 100;
+}
+
+.icon {
+  font-size: 100px;
+}
+
+.Clogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  border: 0.6px solid #0072bc;
+  background: #f4f4f4;
+  box-shadow: 0px 5px 29.3px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  margin: 0px 240px;
+  padding: 40px 20px;
+  position: relative;
+  top: -70px;
+}
+.clogo p {
+  color: #787878;
+
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153%; /* 45.9px */
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* gap: 20px; */
+}
+.hr {
+  width: 40%;
+  height: 0px;
+  margin: 0;
+  border: 0.1px solid grey;
+  background-image: linear-gradient(
+    to left,
+    #555555,
+    #aaaaaa
+  ); /* Dark to light gradient */
+}
+
+.text p {
+  margin: 0px 10px;
+  color: #787878;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153%; /* 45.9px */
+}

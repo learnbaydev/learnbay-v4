@@ -1,12 +1,22 @@
-:root {
-  --primary-color: #0072bc; /* Adjust the color value as needed */
-  --secondary-color: #ffc436; /* Adjust the color value as needed */
-  --tertiary-color: #04c988; /* Adjust the color value as needed */
-  --quaternary-color: #f98e00; /* Adjust the color value as needed */
-  --quinary-color: #0c356a; /* Adjust the color value as needed */
-  --senary-color: #eff3f6; /* Adjust the color value as needed */
-  --septenary-color: #252525; /* Adjust the color value as needed */
+/* Add this import statement at the beginning of your globals.css file */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
+:root {
+  /* Define your color variables */
+  --primary-color: #0072bc;
+  --secondary-color: #ffc436;
+  --tertiary-color: #04c988;
+  --quaternary-color: #f98e00;
+  --quinary-color: #0c356a;
+  --senary-color: #eff3f6;
+  --septenary-color: #252525;
+
+  /* Define font sizes for desktop */
+  --desktop_h1-font-size: 36px;
+  --desktop_h2-font-size: 30px;
+  --desktop_h3-font-size: 26px;
+  --desktop_h4-font-size: 22px;
+  --desktop_h5-font-size: 20px;
 }
 
 * {
@@ -14,21 +24,37 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  /* Apply Raleway font to the body */
+  font-family: "Raleway", sans-serif; /* Fallback to sans-serif if Raleway isn't available */
+  overflow: hidden;
+  margin: 0;
+}
+
 h1 {
-  font-size: 36px;
+  /* Use variable for color */
   color: var(--senary-color);
-  font-size: 55px;
+  /* Use variable for font size */
+  font-size: var(--desktop_h1-font-size);
   font-style: normal;
   font-weight: 800;
-  line-height: 153%; /* 84.15px */
+  line-height: 153%;
+  margin: 0;
 }
 
 h2 {
-  font-size: 30px;  
+  /* Use variable for font size */
+  font-size: var(--desktop_h2-font-size);
+  font-style: normal;
+  margin: 0;
 }
 
 h3 {
-  font-size: 24px;  
+  /* Use variable for font size */
+  font-size: var(--desktop_h3-font-size);
+  font-style: normal;
+  margin: 0;
 }
 
 .swiper {
@@ -43,17 +69,27 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-=======
+
 h4 {
-  font-size: 20px;  
+  /* Use variable for font size */
+  font-size: var(--desktop_h4-font-size);
+  font-style: normal;
+  margin: 0;
 }
 
 h5 {
-  font-size: 18px;  
+  /* Use variable for font size */
+  font-size: var(--desktop_h5-font-size);
+  margin: 0;
 }
 
 h6 {
   font-size: 16px; /* Adjust font size for h6 */
+  margin: 0;
 }
-
-
+a  {
+  color:  var(--senary-color);
+  list-style: none;
+  text-decoration: none;
+}
+}
