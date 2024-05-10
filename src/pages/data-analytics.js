@@ -7,11 +7,13 @@ import CareerServicePro from "@/components/course/careerServicePro/CareerService
 import ToolsCoverd from "@/components/course/toolsCoverd/ToolsCoverd";
 import Layout from "../components/layout";
 import Review from "@/components/course/reviewSection/Review";
+import Navbar from "@/components/global/navbar/Navbar";
 
 const DataAnalytics = () => {
   return (
     <Layout>
       <>
+      <Navbar />
         <Hero />
         <Secondsection />
         <Domainelective />

@@ -13,7 +13,10 @@ const DomainElective = () => {
       <div className={Styles.DomainHead}>
         <div className={Styles.DomainMain}>
           <div className={Styles.leftside}>
-            <h2>Choose <br/>Your Domain Elective</h2>
+            <h2>
+              Choose <br />
+              Your Domain Elective
+            </h2>
             <button>Apply Now</button>
           </div>
 
