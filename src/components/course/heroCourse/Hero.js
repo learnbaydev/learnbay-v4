@@ -1,3 +1,5 @@
+
+
 import React, { useRef, useEffect, useState } from "react";
 import Styles from "./hero.module.css";
 import Image from "next/image";

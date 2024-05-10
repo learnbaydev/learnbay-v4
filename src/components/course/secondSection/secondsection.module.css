@@ -44,15 +44,11 @@ margin: 0;
     background: #FFF;
     display: flex;
     justify-content: center;
-    margin: 0px 300px;
-    padding: 50px 100px 26px 100px;
-
-    /* Border Linear Gradient with Border Radius */
+    margin: 20px 160px 0 240px;
+    padding: 42px 94px 28px 61px;
     border: 1px solid transparent;
     /* border-image: linear-gradient(90deg, #72BC00, #0072BC) 1; */
     border-image-slice: 1;
-
-    /* Border-radius */
     border-radius: 48px;
 }
 
@@ -92,14 +88,14 @@ margin: 0px;
     font-style: normal;
     font-weight: 800;
     line-height: 150%;
-    margin: 0px 306px;
+    margin: 0px 328px 0 240px;
 }
 
 
 .gridsection{
     display: grid;
     grid-template-columns: 42% 52%;
-    margin: 50px 30px 10px 300px;
+    margin: 50px 30px 10px 240px;
     grid-gap: 100px;
     grid-gap: 120px;
     grid-gap: 127px;

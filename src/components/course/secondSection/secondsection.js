@@ -1,5 +1,7 @@
 // components/course/secondsection/secondsection.js
 
+
+
 import React from "react";
 import Image from "next/image";
 import Styles from "./secondsection.module.css";
