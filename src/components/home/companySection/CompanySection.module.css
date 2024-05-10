@@ -23,3 +23,15 @@
 .container {
   padding: 40px 0px;
 }
+
+@media (max-width: 641px) {
+  .container {
+    display: none;
+  }
+  .containerMobile {
+    display: block;
+  }
+  .containerMobile img {
+    width: 100%;
+  }
+}
