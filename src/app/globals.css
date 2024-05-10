@@ -14,21 +14,32 @@
   padding: 0;
   margin: 0;
 }
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
 h1 {
-  font-size: 36px;
+  font-size: 45px;
   color: var(--senary-color);
   font-size: 55px;
   font-style: normal;
   font-weight: 800;
   line-height: 153%; /* 84.15px */
+  margin: 0;
 }
 
 h2 {
   font-size: 30px;  
+  font-style: normal;
+  margin: 0;
 }
 
 h3 {
   font-size: 24px;  
+  font-style: normal;
+  margin: 0;
 }
 
 .swiper {
@@ -43,17 +54,25 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-=======
+
 h4 {
   font-size: 20px;  
+  font-style: normal;
+  margin: 0;
 }
 
 h5 {
   font-size: 18px;  
+  margin: 0;
 }
 
 h6 {
   font-size: 16px; /* Adjust font size for h6 */
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'raleway', sans-serif; /* Specify your desired font family */
+}
 }
 
 

@@ -1,0 +1,136 @@
+.secondHead {
+    background: linear-gradient(180deg, #F1F1F1 3.35%, #EEE 100%);
+padding-bottom: 60px;
+    margin-top:200px;
+}
+
+.trust{
+    
+    justify-content: center;
+    position: relative;
+    left: 33%;
+    top: -70px;
+    border-radius: 22px;
+    border: 0.5px solid #484747;
+    background: #FFF;
+    /* margin: 40px; */
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 999;
+    padding: 16px 31px;
+    
+}
+
+.trust h2 {
+    color: #0072BC;
+    
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+margin: 0;
+
+}
+.ibmHead{
+    /* background-color: red; */
+    position: relative;
+    top: -100px;
+    bottom: 0;
+}
+.mainIBM {
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: 10px 10px 10px rgba(0, 114, 188, 0.3), -1px -1px 10px rgba(114, 188, 0, 0.3), 1px 1px 6px rgba(0, 114, 188, 0.3), -1px -1px 6px rgba(114, 188, 0, 0.3);
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    margin: 0px 300px;
+    padding: 50px 100px 26px 100px;
+
+    /* Border Linear Gradient with Border Radius */
+    border: 1px solid transparent;
+    /* border-image: linear-gradient(90deg, #72BC00, #0072BC) 1; */
+    border-image-slice: 1;
+
+    /* Border-radius */
+    border-radius: 48px;
+}
+
+
+
+
+.insidediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.insidetitle h3 {
+    color: #696969;
+    
+font-size: 45px;
+font-style: normal;
+font-weight:600;
+
+margin: 0;
+}
+
+.insidetitle p {
+    color: #000;
+    
+font-size: 18px;
+font-style: normal;
+font-weight: 100;
+
+margin: 0px;
+}
+
+.SecondHeadtwo h2{
+    color: #6E6D6D;
+    
+    font-size: 43.415px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    margin: 0px 306px;
+}
+
+
+.gridsection{
+    display: grid;
+    grid-template-columns: 42% 52%;
+    margin: 50px 30px 10px 300px;
+    grid-gap: 100px;
+    grid-gap: 120px;
+    grid-gap: 127px;
+    grid-gap: 138px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gridsection h3  {
+
+    color: #000;
+
+font-size: 30px;
+font-style: normal;
+font-weight:600;
+line-height: 153%; /* 48.96px */
+margin: 0;
+}
+
+.gridsection p  {
+
+    color: #000;
+ 
+font-size: 14px;
+font-style: normal;
+font-weight: 100;
+line-height: 153%; /* 30.6px */
+margin: 0;
+}
+.gridinsidediv{
+    margin: 40px 0;
+}

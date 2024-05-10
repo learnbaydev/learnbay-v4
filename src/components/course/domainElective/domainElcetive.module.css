@@ -1,0 +1,104 @@
+.DomainMain {
+  margin: 72px 160px 600px 300px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.leftside h2 {
+  font-size: 50px;
+
+  margin: 0;
+  color: #a4a4a4;
+
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123%; /* 84.15px */
+}
+.leftside {
+  margin-right: 20px;
+}
+.leftside button {
+  border-radius: 20px;
+  background: #0072bc;
+  padding: 10px 30px;
+  border: none;
+  color: #fff;
+
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 153%; /* 45.9px */
+  margin-top: 55px;
+}
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  border-radius: 60px;
+  background: #efefef;
+  padding: 20px;
+  height: 300px;
+}
+.rightside p {
+  padding: 10px 30px;
+  color: #000;
+
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 153%; /* 27.54px */
+}
+
+.rytsidedivs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 25px 0px 25px;
+}
+.tabs {
+  width: 136px;
+  height: auto;
+}
+.tabs h4 {
+  color: #000;
+
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 153%; /* 35.19px */
+  margin: 0;
+}
+
+.tabs {
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px 10px;
+  width: 150px;
+  transition: background-color 0.10s ease, transform 0.10s ease;
+}
+
+.tabs:hover {
+  background-color: white;
+  transform: scale(1.0);
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.tabs:hover p {
+  margin: 0;
+  padding: 10px 1px;
+  line-height: 20px;
+  font-weight: 100;
+}
+.tabs:hover h4 {
+  font-size: 20px;
+}
+.downloadBtn {
+  padding: 4px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #0072bc;
+  color: #fff;
+}
