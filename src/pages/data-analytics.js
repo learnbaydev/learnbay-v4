@@ -13,14 +13,14 @@ const DataAnalytics = () => {
   return (
     <Layout>
       <>
-      <Navbar />
+        <Navbar />
         <Hero />
         <Secondsection />
         <Domainelective />
         <GrowthSection />
         <CareerServicePro />
         <ToolsCoverd />
-        <Review/>
+        <Review />
       </>
     </Layout>
   );

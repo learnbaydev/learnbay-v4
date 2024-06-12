@@ -12,7 +12,7 @@ function HeroSection() {
             // mobile
             //   ? " https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/Masters+header+BG+Mobile+View+(1).webp"
             //   :
-            "https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/HeroSectionBg.webp"
+            "https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/home-bg.webp"
           }
           fill
           priority
@@ -20,8 +20,8 @@ function HeroSection() {
         />
       </div>
       <div className={styles.content}>
-        <h3>Advance your tech career with</h3>
         <h1>India’s #1 Upskilling Platform for Working Professionals</h1>
+        <h3>GenAI-powered Certified Courses</h3>
         <div className={styles.round}>
           <p>Data Science & AI</p>
           <p>Cloud & DevOps</p>

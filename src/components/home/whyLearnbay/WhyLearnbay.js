@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { useEffect, useRef } from "react";
 import styles from "./whyLearnbay.module.css";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
-function WhyLearnbay() {
-  const MyCanvass = () => {
+const WhyLearnbay = () => {
+  const MyCanvas = () => {
     const canvasRef = useRef(null);
     let ctx, canvasWidth, canvasHeight, arrowY;
     const arrowSize = 15;
@@ -27,8 +27,9 @@ function WhyLearnbay() {
         const scrollTop = window.scrollY || window.pageYOffset;
 
         if (
-          canvasRect.top - scrollTop < windowHeight / 8 &&
-          canvasRect.bottom > (windowHeight / 8) * 3
+          scrollTop > 2300 &&
+          canvasRect.top - scrollTop < windowHeight / 6 &&
+          canvasRect.bottom > windowHeight / 6
         ) {
           window.addEventListener("wheel", handleWheel);
         } else {
@@ -43,7 +44,7 @@ function WhyLearnbay() {
     }, []);
 
     const handleWheel = (event) => {
-      arrowY += event.deltaY * 0.8;
+      arrowY += event.deltaY * 1;
       arrowY = Math.min(Math.max(0, arrowY), canvasHeight - arrowSize);
       drawArrow();
     };
@@ -51,10 +52,10 @@ function WhyLearnbay() {
     const drawArrow = () => {
       ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
-      const leftPosition = 22;
+      const leftPosition = 20;
 
       ctx.strokeStyle = "black";
-      ctx.setLineDash([10, 10]);
+      ctx.setLineDash([5, 5]);
       ctx.beginPath();
       ctx.lineWidth = 1;
       ctx.moveTo(leftPosition, 0);
@@ -92,80 +93,93 @@ function WhyLearnbay() {
           position: "relative",
           top: "0",
           left: "0",
-          width: "100%",
-          height: "100%",
+          // width: "100%",
+          // height: "100%",
         }}
       ></canvas>
     );
   };
   return (
-    <section className={styles.section}>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.imgWrap}>
+        <Image
+          src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/highlights-img.webp"
+          alt="Learnbay"
+          priority
+          height={670}
+          width={1565}
+        />
+      </div>
+      <div className={styles.keyContainer}>
         <div className={styles.canvas}>
-          <MyCanvass />
+          <MyCanvas />
         </div>
         <div>
-          <h2>Why choose Learnbay for Upskilling?</h2>
-          <div className={styles.twoContainer}>
-            <div className={styles.iconContent}>
-              <div className={styles.parentBox}>
-                <Image
-                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/250Avg.webp"
-                  width="101"
-                  height="90"
-                  loading="lazy"
-                  quality={40}
-                  alt="data science course"
-                />
-                <div className={styles.textBox}>
-                  <h3>250% Avg.</h3>
-                  <p>Salary Hike</p>
-                </div>
+          <h3 className={styles.keyHeading}>What are our key highlights?</h3>
+          <div className={styles.keyBoxes}>
+            <div className={styles.boxOne}>
+              <div className={styles.keyContent}>
+                <span className={styles.keyIcon}>
+                  <Image
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/key_one.webp"
+                    alt="Learnbay"
+                    loading="lazy"
+                    width={71}
+                    height={65}
+                  />
+                </span>
+                <h4 className={styles.keyTitle}>40k+ Successful</h4>
+                <p className={styles.keyDesc}>Career Transitions</p>
               </div>
-              <div className={styles.parentBox}>
-                <Image
-                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/dedicated.webp"
-                  width="101"
-                  height="90"
-                  loading="lazy"
-                  quality={40}
-                  alt="data science course"
-                />
-                <div className={styles.textBox}>
-                  <h3>Dedicated</h3>
-                  <p>Placement Cell</p>
-                </div>
+              <div className={styles.boxLine}></div>
+              <div className={styles.keyContent}>
+                <span className={styles.keyIcon}>
+                  <Image
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/key_two.webp"
+                    alt="Learnbay"
+                    loading="lazy"
+                    width={80}
+                    height={65}
+                  />
+                </span>
+                <h4 className={styles.keyTitle}>72% Trusted</h4>
+                <p className={styles.keyDesc}>By Recruiters</p>
               </div>
-              <div className={styles.parentBox}>
-                <Image
-                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/live.webp"
-                  width="101"
-                  height="90"
-                  loading="lazy"
-                  quality={40}
-                  alt="data science course"
-                />
-                <div className={styles.textBox}>
-                  <h3>Live online</h3>
-                  <p>Interactive Session</p>
-                </div>
+              <div className={styles.boxLine}></div>
+              <div className={styles.keyContent}>
+                <span className={styles.keyIcon}>
+                  <Image
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/key_three.webp"
+                    alt="Learnbay"
+                    loading="lazy"
+                    width={70}
+                    height={70}
+                  />
+                </span>
+                <h4 className={styles.keyTitle}>100%</h4>
+                <p className={styles.keyDesc}>Interview Guarantee</p>
               </div>
             </div>
-            <div className={styles.RightImage}>
-              <Image
-                src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/RightImage.webp"
-                width="367"
-                height="500"
-                loading="lazy"
-                quality={40}
-                alt="data science course"
-              />
+            <div className={styles.boxTwo}>
+              <div className={styles.emptyBox}>
+                <span className={styles.starIcon}>
+                  <Image
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/star_icon.webp"
+                    alt="Learnbay"
+                    loading="lazy"
+                    width={90}
+                    height={90}
+                  />
+                </span>
+                <h4 className={styles.starHeading}>2x Faster Growth</h4>
+                <p className={styles.starDesc}>With GenAI</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default WhyLearnbay;

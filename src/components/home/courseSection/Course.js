@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./Course.module.css";
 import { courseDetails, courseDetailsM } from "./CourseDetails";
+import Image from "next/image";
 const Popup = dynamic(() => import("@/components/global/popup/Popup"));
 const Form = dynamic(() => import("@/components/global/form/Form"));
 
@@ -110,7 +111,7 @@ const Course = ({
         const scrollTop = window.scrollY || window.pageYOffset;
 
         if (
-          scrollTop > 1410 &&
+          scrollTop > 800 &&
           canvasRect.top - scrollTop < windowHeight / 6 &&
           canvasRect.bottom > windowHeight / 6
         ) {
@@ -138,7 +139,7 @@ const Course = ({
       const leftPosition = 20;
 
       ctx.strokeStyle = "black";
-      ctx.setLineDash([10, 10]);
+      ctx.setLineDash([5, 5]);
       ctx.beginPath();
       ctx.lineWidth = 1;
       ctx.moveTo(leftPosition, 0);
@@ -217,7 +218,7 @@ const Course = ({
         <div className={styles.newww}></div>
         <div className={styles.courses}>
           <MyCanvas />
-          <div className={styles.listPanel}>
+          {/* <div className={styles.listPanel}>
             {courseArray.map((CourseData, index) => {
               return (
                 <span
@@ -245,6 +246,62 @@ const Course = ({
                 </span>
               );
             })}
+          </div> */}
+          <div className={styles.newDiv}>
+            <div className={styles.innerNew}>
+              <div className={styles.newImg}>
+                <Image
+                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/Data-science-box.webp"
+                  alt="Learnbay"
+                  priority
+                  height={250}
+                  width={382}
+                />
+              </div>
+              <h6 className={styles.newH6}>
+                Data Science & <br />
+                Artificial intelligence
+                <br />
+                <span className={styles.newSpan}>Course</span>
+              </h6>
+              <button className={styles.newBlueBtn}>View courses</button>
+            </div>
+            <div className={styles.innerNew}>
+              <div className={styles.newImg}>
+                <Image
+                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/Business-analytics-box.webp"
+                  alt="Learnbay"
+                  priority
+                  height={250}
+                  width={382}
+                />
+              </div>
+              <h6 className={styles.newH6}>
+              Business Analytics & <br />
+              Data Analytics
+                <br />
+                <span className={styles.newSpan}>Course</span>
+              </h6>
+              <button className={styles.newBlueBtn}>View courses</button>
+            </div>
+            <div className={styles.innerNew}>
+              <div className={styles.newImg}>
+                <Image
+                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/Cloud-Devops-box.webp"
+                  alt="Learnbay"
+                  priority
+                  height={250}
+                  width={382}
+                />
+              </div>
+              <h6 className={styles.newH6}>
+              Cloud & DevOps and <br />
+              Fullstack
+                <br />
+                <span className={styles.newSpan}>Course</span>
+              </h6>
+              <button className={styles.newBlueBtn}>View courses</button>
+            </div>
           </div>
           <div>
             {courseArray.map((courseDetail, index) => {
@@ -255,7 +312,7 @@ const Course = ({
                     return (
                       <div key={index} className={styles.divBox}>
                         <div className={styles.viewAll}>
-                          <div
+                          {/* <div
                             className={styles.bigBox}
                             style={
                               courseDetail.courseName ===
@@ -269,7 +326,7 @@ const Course = ({
                                 ? { background: "#0072BC" }
                                 : { background: "#04C988" }
                             }
-                          ></div>
+                          ></div> */}
                           <h5
                             className={styles.h5font}
                             style={
