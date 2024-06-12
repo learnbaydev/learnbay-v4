@@ -1,0 +1,133 @@
+.imgWrap img {
+  width: 100%;
+  height: 800px;
+}
+.mediaMainHeading {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+}
+.greyText {
+  color: #A4A4A4;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+.mainDiv {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  margin-top: -730px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 32% 24% 32%;
+  gap: 70px;
+}
+.careerImg {
+  width: 100%;
+  height: auto;
+}
+.innerDiv,
+.innerDiv2 {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.innerDiv2 img {
+  margin-top: 52px;
+}
+.goldenH4 {
+  text-align: center;
+  background: linear-gradient(90deg, #F98E00 19.22%, #FFC436 82.03%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 320px;
+  font-size: 24px;
+}
+.paraBot {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.DivCont01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  margin-top: -255px;
+  gap: 85px;
+  width: 305px;
+  margin-left: 35px;
+}
+.DivCont02 {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 25px;
+}
+.DivCont03 {
+    position: absolute;
+    margin-left: 30px;
+    overflow-x: scroll;
+    height: 360px;
+  }
+  .iconContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+    width: 310px;
+    color: #fff;
+    
+  }
+  .btnIcon {
+    display: flex;
+  }
+  .btnContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 0px 24px;
+    border-radius: 37.176px;
+    background: rgba(255, 255, 255, 0.10);
+    cursor: pointer;
+
+  }
+  .iconDownload {
+    font-size: 26px;
+  }
+  .iconText {
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+  }
+  .line {
+    height: 0.5px;
+    width: 40px;
+    border: 0.5px solid #fff;
+  }
+  .paraSide {
+    overflow: hidden;
+    max-height: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 30px 15px 30px;
+  }
+  .paraSideshow{
+    height: auto;
+    max-height: 9999px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 30px 15px 30px;
+  }

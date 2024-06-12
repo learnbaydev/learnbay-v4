@@ -258,9 +258,9 @@ const ProjectContent = () => {
     let leftPosition = 0;
 
     const handleWheel = (event) => {
-      if (arrowY >= 625 && event.deltaY > 0) {
-        arrowY = 700;
-        leftPosition = Math.min(leftPosition + event.deltaY * 0.5, 800);
+      if (arrowY >= 750 && event.deltaY > 0) {
+        arrowY = 770;
+        leftPosition = Math.min(leftPosition + event.deltaY * 0.5, 400);
       } else {
         arrowY += event.deltaY * 1;
         arrowY = Math.min(Math.max(0, arrowY), canvasHeight - arrowSize);
@@ -271,10 +271,10 @@ const ProjectContent = () => {
     const drawArrow = () => {
       ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
-      const startX = 630; // Starting X coordinate
-      const startY = 700; // Starting Y coordinate
+      const startX = 670; // Starting X coordinate
+      const startY = 770; // Starting Y coordinate
 
-      let leftPosition = 630;
+      let leftPosition = 670;
 
       ctx.strokeStyle = "#E9E9E9";
       ctx.setLineDash([5, 5]);
@@ -283,14 +283,14 @@ const ProjectContent = () => {
       ctx.moveTo(startX, startY);
       ctx.lineTo(0, startY); // Extend the line to the left edge
       ctx.moveTo(leftPosition, 0);
-      ctx.lineTo(leftPosition, 700);
+      ctx.lineTo(leftPosition, 770);
       ctx.stroke();
 
       ctx.setLineDash([]);
       ctx.beginPath();
       ctx.strokeStyle = "#E9E9E9";
       ctx.lineWidth = 3;
-      if (arrowY >= 700) {
+      if (arrowY >= 770) {
         ctx.moveTo(startX, startY);
         ctx.lineTo(0, startY); // Extend the line to the left edge of the canvas
         ctx.moveTo(leftPosition, 0);
@@ -307,8 +307,8 @@ const ProjectContent = () => {
       ctx.fillStyle = "#E9E9E9";
       ctx.strokeStyle = "#E9E9E9";
       ctx.beginPath();
-      if (arrowY >= 700) {
-        leftPosition -= 700;
+      if (arrowY >= 770) {
+        leftPosition -= 770;
         ctx.moveTo(leftPosition, arrowY);
         ctx.lineTo(leftPosition + arrowSize, arrowY + arrowSize / 2); // Extend downwards
         ctx.lineTo(leftPosition + arrowSize, arrowY - arrowSize / 2); // Point to the right
@@ -329,7 +329,7 @@ const ProjectContent = () => {
         style={{
           position: "absolute",
           // top: "0",
-          left: "230px",
+          left: "140px",
           width: "-webkit-fill-available",
           // height: "100%",
         }}

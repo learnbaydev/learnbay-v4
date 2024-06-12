@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
   .FooterSection {
     background-color: #313131;
-    padding: 70px 100px 0px 100px;
+    padding: 70px 0px 0px 0px;
     font-family: "Roboto", Sans-serif;
   }
   .FooterDiv {
@@ -9,6 +9,8 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     padding: 20px 0px 20px 0px;
+    width: 1200px;
+    margin: auto;
   }
   .FooterDivInner {
     color: #fff;
@@ -48,7 +50,9 @@
 
   .FooterBottom {
     background-color: #313131;
-    border-top: 1px solid #ffffff50;
+    /* border-top: 1px solid #ffffff50; */
+    width: 1200px;
+    margin: auto;
   }
 
   .FooterBottomInner {
