@@ -1,6 +1,15 @@
 /* Add this import statement at the beginning of your globals.css file */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"); */
 
+html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 :root {
   /* Define your color variables */
   --primary-color: #0072bc;
@@ -12,23 +21,21 @@
   --septenary-color: #252525;
 
   /* Define font sizes for desktop */
-  --desktop_h1-font-size: 36px;
+  --desktop_h1-font-size: 48px;
   --desktop_h2-font-size: 30px;
   --desktop_h3-font-size: 26px;
   --desktop_h4-font-size: 22px;
   --desktop_h5-font-size: 20px;
+  --desktop_p-font-size: 16px;
+
+  /* Define font colour for desktop */
+  --desktop_h1-font-colour: #fff;
+  --desktop_h2-font-colour: #a4a4a4;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
-}
-
-body {
-  /* Apply Raleway font to the body */
-  font-family: "Raleway", sans-serif; /* Fallback to sans-serif if Raleway isn't available */
-  overflow: hidden;
   margin: 0;
 }
 
@@ -61,35 +68,26 @@ h3 {
   width: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  h4 {
+    /* Use variable for font size */
+    font-size: var(--desktop_h4-font-size);
+    font-style: normal;
+    margin: 0;
+  }
 
-h4 {
-  /* Use variable for font size */
-  font-size: var(--desktop_h4-font-size);
-  font-style: normal;
-  margin: 0;
-}
+  h5 {
+    /* Use variable for font size */
+    font-size: var(--desktop_h5-font-size);
+    margin: 0;
+  }
 
-h5 {
-  /* Use variable for font size */
-  font-size: var(--desktop_h5-font-size);
-  margin: 0;
-}
+  h6 {
+    font-size: 16px; /* Adjust font size for h6 */
+    margin: 0;
+  }
+  a {
+    color: var(--senary-color);
+    list-style: none;
+    text-decoration: none;
+  }
 
-h6 {
-  font-size: 16px; /* Adjust font size for h6 */
-  margin: 0;
-}
-a  {
-  color:  var(--senary-color);
-  list-style: none;
-  text-decoration: none;
-}
-}

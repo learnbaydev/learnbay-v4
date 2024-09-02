@@ -84,7 +84,7 @@
 /* Main Heading */
 .mainh1 {
   color: var(--senary-color);
-  font-size: 60px;
+  font-size: var( --desktop_h1-font-size);
   font-weight: 800;
   line-height: 127.182%;
   margin: 40px 0 0 0px;
@@ -95,10 +95,10 @@
 .mainpara {
   color: #afafaf;
   
-  font-size: 29px;
+  font-size: var(--desktop_h4-font-size);
   font-weight: 100;
   line-height: 127.182%;
-  margin: 10px 0;
+  margin: 18px 0;
 }
 
 /* Collaboration */

@@ -7,7 +7,7 @@ import Course from "@/components/home/courseSection/Course";
 import ProjectSection from "@/components/home/projectSection/ProjectSection";
 import DomainSection from "@/components/home/domainSection/DomainSection";
 import CallSection from "@/components/home/callSection/CallSection";
-import Footer from "@/components/global/footer/Footer";
+import Footer from "@/components/global/Footer/Footer";
 import Navbar from "@/components/global/navbar/Navbar";
 
 export default function Home() {
@@ -20,6 +20,7 @@ export default function Home() {
       <Course />
       <ProjectSection />
       <DomainSection />
+     
       <CallSection />
       <Footer />
     </main>

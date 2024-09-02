@@ -9,7 +9,7 @@ padding-bottom: 60px;
     justify-content: center;
     position: relative;
     left: 33%;
-    top: -70px;
+    top: -135px;
     border-radius: 22px;
     border: 0.5px solid #484747;
     background: #FFF;
@@ -22,9 +22,9 @@ padding-bottom: 60px;
 }
 
 .trust h2 {
-    color: #0072BC;
+    color: var(--primary-color);
     
-font-size: 30px;
+font-size: var(--desktop_h3-font-size);
 font-style: normal;
 font-weight: 500;
 margin: 0;
@@ -33,7 +33,7 @@ margin: 0;
 .ibmHead{
     /* background-color: red; */
     position: relative;
-    top: -100px;
+    top: -190px;
     bottom: 0;
 }
 .mainIBM {
@@ -50,6 +50,7 @@ margin: 0;
     /* border-image: linear-gradient(90deg, #72BC00, #0072BC) 1; */
     border-image-slice: 1;
     border-radius: 48px;
+    gap: 30px;
 }
 
 

@@ -1,0 +1,13 @@
+{
+    "header": {
+      "title": "Welcome to Page 2",
+      "subtitle": "This is the subtitle for Page 2",
+      "para": "Para is here 2"
+    },
+    "secondSection": {
+    "comp": "second heading",
+    "secondPara": "this is para"
+    
+    }
+  }
+  

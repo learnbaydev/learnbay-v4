@@ -15,7 +15,9 @@ function Secondsection() {
       <div className={Styles.secondHead}>
         <div className={Styles.trust}>
           <h2>Trusted by 1,00,000 + Professionals</h2>
+
         </div>
+ 
         <div className={Styles.ibmHead}>
           <div className={Styles.mainIBM}>
             {sectionDataList.map((item, index) => (
