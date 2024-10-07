@@ -9,18 +9,28 @@ import DomainSection from "@/components/home/domainSection/DomainSection";
 import CallSection from "@/components/home/callSection/CallSection";
 import Footer from "@/components/global/Footer/Footer";
 import Navbar from "@/components/global/navbar/Navbar";
+import GenAi from "@/components/home/genAi/GenAi";
+import ReviewSlider from "@/components/home/reviewSlider/reviewSlider";
+import CareerHome from "@/components/home/careerHome/careerHome";
+import MobileTestimonial from "@/components/home/mobileTestimonial/MobileTestimonial";
+
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar />
-      <HeroSection />
+      <Navbar dataScienceCounselling={true} radio={true} />
+      <HeroSection dataScienceCounselling={true} radio={true}/>
       <CompanySection />
+      <Course dataScienceCounselling={true} radio={true}/>
       <WhyLearnbay />
-      <Course />
-      <ProjectSection />
-      <DomainSection />
-     
+      {/* <ReelSection /> */}
+      <ReviewSlider />
+      <CareerHome />
+      <GenAi />
+            {/* <ProjectSection /> */}
+      <DomainSection dataScienceCounselling={true} radio={true} />
+      <MobileTestimonial />
+      <Media />
       <CallSection />
       <Footer />
     </main>
