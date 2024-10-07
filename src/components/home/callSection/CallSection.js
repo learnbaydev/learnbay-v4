@@ -9,7 +9,7 @@ function CallSection() {
       <div className={styles.imgWrap}>
         <Image
           src={
-            "https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/callHome.webp"
+            "https://d32and0ii3b8oy.cloudfront.net/web/V4/HomePage/call_home_section.webp"
           }
           alt="Learnbay"
           width="1200"

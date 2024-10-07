@@ -1,7 +1,6 @@
 // import "./globals.css";
 import { Raleway } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
-
 const raleway = Raleway({
   weight: ["300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],

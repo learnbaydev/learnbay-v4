@@ -1,0 +1,146 @@
+.section {
+  display: grid;
+  grid-template-columns: 66% 32%;
+  margin: 50px 130px;
+  padding: 50px 50px 0px 50px;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+  margin: 30px auto 100px auto;
+  border-radius: 56.744px;
+border: 1.598px solid rgba(0, 0, 0, 0.20);
+background: linear-gradient(100deg, rgba(1, 17, 28, 0.06) 3.09%, rgba(0, 114, 188, 0.06) 96.65%);
+}
+
+.FirstDiv h4 {
+  color: #000;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.FirstDiv span {
+  background: linear-gradient(90deg, #616161 0.02%, #AFAFAF 39.74%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+.btnWrapper {
+    margin-top: 80px;
+}
+
+.btnWrapper button {
+  border-radius: 12px;
+  border: 1px solid #0072BC;
+  background: #E1F0F9;
+  color: #0072BC;
+}
+
+.MobileReviewImageContainer {
+    margin-bottom: -5px;
+    position: relative;
+}
+
+.leftSlide {
+  display: flex;
+  grid-template-columns: 10% 80% 10%;
+  gap: 20px;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.sliderUser {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 84%;
+}
+
+.FirstDiv {
+    padding-right: 30px;
+}
+
+.icons {
+    padding: 5px;
+    background: #F9960029;
+    color: #747272;
+    font-size: 50px;
+    border-radius: 50px;
+}
+
+.active {
+  opacity: 1;
+}
+
+.faded {
+  opacity: 0.3;
+}
+
+.ShowInMobile {
+    display: none;
+}
+@media (max-width: 1024px) {
+.section {
+  margin: 30px;
+}
+
+
+}
+
+@media (max-width: 641px) {
+.section {
+    margin: 0px;
+    padding: 10px 10px 0px 10px;
+    display: block;
+    border-radius: 0px;
+}
+.FirstDiv span {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .FirstDiv span::after {
+    content: '\A';
+        white-space: pre;
+  }
+  .FirstDiv h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+.leftSlide {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.FirstDiv {
+    padding: 0;
+}
+.icons {
+font-size: 30px;
+}
+.imgBorder {
+width: 50px;
+height: 50px;
+}
+.sliderUser {
+    gap: 10px;
+}
+.btnWrapper {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+.MobileReviewImageContainer {
+    margin-bottom: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.HideInMobile {
+    display: none;
+}
+.ShowInMobile {
+    display: block;
+}
+}

@@ -1,0 +1,62 @@
+.sliderContainer{
+     width: 1200px;
+     margin: auto;
+ }
+ .headingContainer{
+     color: white;
+     margin-left: 5rem;
+     padding-top: 4rem;
+     line-height: 1.4;
+ }
+ .mainHeading{
+    font-size: 45px;
+    color: #A4A4A4;
+    font-weight: 800;
+ }
+ .subHeading{
+    color: #616161;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.6;
+ }
+ .btnContainer{
+     position: absolute;
+     top: 55%;
+     display: flex;
+     gap: 1300px;
+     margin-left: 4rem;
+ }
+ .prevBtn{
+     color: white;
+     cursor: pointer;
+     background: #848484;
+     border-radius: 50%;
+     font-size: 40px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .nextBtn{
+     color: white;
+     cursor: pointer;
+     background: #848484;
+     font-size: 40px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .sliderWrapper{
+     
+     width: 700px;
+     margin-top: 6rem;
+ }
+ 
+ .mySwiper{
+     width: 1000px;
+ }
+ .videoImage{
+     height: 340px;
+     width: 210px;
+ }

@@ -1,0 +1,82 @@
+.container {
+    background-color: #fff;
+    margin-top: 76px;
+}
+
+.main {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 6% 55% 37%;
+    margin: auto;
+    align-items: center;
+}
+
+.firstDiv {
+    padding: 70px 50px 70px;
+    border-radius: 39px;
+    border: 1px solid #000;
+    background: #212121;
+    margin: 50px 0px 80px 0px;
+}
+
+.firstDiv h4 {
+    background: linear-gradient(90deg, #F98600 25.21%, #0FA1FF 38.01%, #686AFB 52.11%, #FE5449 63.57%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+.whiteText {
+    color: #fff;
+    font-size: 30px;
+    width: 450px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.iconDiv {
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 0px 70px 0px;
+}
+
+.greenCheck {
+    color: #75f94c;
+    font-size: 20px;
+}
+
+.golden {
+    color: #FFA500;
+font-size: 20px;
+font-weight: 600;
+}
+
+.iconDiv p {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    align-items: center;
+}
+
+.secondDiv {
+    height: fit-content;
+    border-radius: 0px 61px 61px 0px;
+border: 1px solid #FFF;
+padding: 50px 70px;
+background: linear-gradient(226deg, #EADDFF 15.58%, #FFE9EA 48.98%, #F1F9FF 75.84%);
+}
+
+.GenText {
+    color: #666;
+font-size: 32px;
+margin-bottom: 40px;
+font-weight: 600;
+}
+
+.canvas {
+    height: 100%;
+}

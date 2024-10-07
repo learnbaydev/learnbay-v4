@@ -3,9 +3,7 @@
   font-size: 56px;
   font-style: normal;
   font-weight: 800;
-  line-height: 153%; /* 107.1px */
-  width: 800px;
-  padding: 50px 70px 0px;
+  padding: 0px 70px 0px;
 }
 
 .mainHeadGreen {
@@ -16,6 +14,43 @@
   width: 50px;
   height: 50px;
   border-radius: 10px;
+}
+
+.newImg img {
+  width: 100%;
+  height: auto;
+}
+
+.newH6 {
+  margin: -205px 0px 0px 40px;
+  z-index: 1;
+  position: absolute;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.newBlueBtn {
+  margin: -50px 0px 0px 0px;
+  z-index: 1;
+  padding: 8px 22px;
+  font-size: 20px;
+  color: #0072BC;
+  position: absolute;
+  border-radius: 27px;
+border: 1px solid #0072BC;
+background: rgba(3, 131, 255, 0.20);
+}
+
+.newSpan {
+  font-size: 20px;
+  color: #E77B16;
+}
+
+.newDiv {
+  display: flex;
+  gap: 50px;
 }
 
 .orangeBg {
@@ -47,7 +82,7 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
 
 .orangeBg > p, .blueBg > p, .GreenBg > p {
   color: #fff !important;
-  font-size: 17px !important;
+  font-size: 14px !important;
   font-weight: 600 !important;
   margin: 0 !important;
 }
@@ -323,7 +358,7 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
   display: flex;
   color: #676767;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   margin: 0;
   margin-top: 10px;
@@ -939,7 +974,7 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
   position: relative;
   flex-flow: column;
   align-items: center;
-  padding: 20px 20px 30px;
+  padding: 10px 20px 20px;
   margin-left: 0px;
   background-color: white;
   /* hello */
@@ -949,8 +984,8 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
 }
 .imgWrap {
   display: flex;
-  margin: 20px 20px 10px;
-  height: 120px;
+  margin: 15px 15px 10px;
+  height: 90px;
   background-color: white;
   border-radius: 30px;
   position: relative;
@@ -960,7 +995,7 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
 }
 
 .leftSide h6 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   margin: 0;
   width: 100%;
@@ -971,7 +1006,7 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
   display: flex;
   flex-flow: column;
   text-align: left;
-  margin: -103px 0px 0px 40px;
+  margin: -75px 0px 0px 40px;
   z-index: 1;
   position: absolute;
 }
@@ -1005,7 +1040,7 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
   display: flex;
   color: #676767;
   align-items: center;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   margin: 0;
   margin-top: 10px;
@@ -1032,11 +1067,11 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
   gap: 10px;
   margin-top: 0px;
   padding: 0px 20px 0px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border-radius: 26px;
 }
 .btnWrapper button {
-  padding: 10px 15px;
+  padding: 8px 10px;
   width: 100%;
   gap: 5px;
   display: flex;
@@ -1044,7 +1079,7 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
   justify-content: center;
   height: 100%;
   border: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .btnWrapper button:hover {
@@ -1080,7 +1115,7 @@ background: linear-gradient(79deg, #0072BC 1.56%, #023353 99.22%);
 }
 
 .h5font {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   margin: 0;
   margin-left: 15px;

@@ -6,7 +6,7 @@ function CompanySection() {
   return (
     <section className={styles.section}>
       <h3>
-        Learn from Top<span> 1% Tech Mentors</span>
+       Learn from the<span> best in the industry</span>
       </h3>
       <div className={styles.container}>
         <div className="imgWrapper">

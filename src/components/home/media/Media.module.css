@@ -1,0 +1,103 @@
+.mediaWrapper{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+
+.mediaContainer{
+    margin-top: 4rem;
+}
+.mediaMainheading{
+    color: #A4A4A4;
+    font-size: 50px;
+    font-weight: 800
+}
+.mediaSubheading{
+    color: #F98E00;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btnContainer{
+    position: absolute;
+    top: 25px;
+    right: 13rem;
+    display: flex;
+    gap: 1rem;
+}
+.sliderWrapper{
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+}
+.mySwiper{
+    margin-top: 1rem;
+}
+.mediaCard{
+  padding: 1.2rem 1.6rem;
+  width: 265px;
+  border: 0.5px solid #444444;
+  border-radius: 30px;
+}
+.medcardContent{
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 30px 0;
+  line-height: 1.5;
+}
+.medcardHeading{
+  width: fit-content;
+  background: #0C356A;
+  color: white;
+  padding: 13px 20px;
+  font-size: 18px;
+  margin-top: -2.5rem;
+  margin-left: -1.7rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.medCarddate{
+  color: #898989;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Leftrotate180,
+.Rightrotate180 {
+  transform: rotate(180deg);
+  background: #D9D9D9;
+}
+.Leftrotate180 {
+  width: 80px;
+  height: 26px;
+  flex-shrink: 0;
+  color: black;
+  border-radius: 100px;
+}
+.Rightrotate180 {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: gray;
+  border-radius: 100px;
+}
+  
+  .leftbtn {
+    width: 80px;
+    height: 26px;
+    
+    flex-shrink: 0;
+    color: black;
+    background: #D9D9D9;
+    border-radius: 100px;
+    cursor: pointer;
+    
+  }
+  .Rightbtn {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    color: gray;
+    background: #D9D9D9;
+    border-radius: 100px;
+    cursor: pointer;
+  }
