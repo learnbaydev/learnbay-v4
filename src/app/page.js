@@ -7,14 +7,13 @@ import Course from "@/components/home/courseSection/Course";
 import ProjectSection from "@/components/home/projectSection/ProjectSection";
 import DomainSection from "@/components/home/domainSection/DomainSection";
 import CallSection from "@/components/home/callSection/CallSection";
-import Footer from "@/components/global/footer/Footer";
+import Footer from "@/components/global/Footer/Footer";
 import Navbar from "@/components/global/navbar/Navbar";
 import GenAi from "@/components/home/genAi/GenAi";
-import Media from "@/components/home/media/Media";
 import ReviewSlider from "@/components/home/reviewSlider/reviewSlider";
 import CareerHome from "@/components/home/careerHome/careerHome";
 import MobileTestimonial from "@/components/home/mobileTestimonial/MobileTestimonial";
-import ReelSection from "@/components/home/reelSection/reelSection";
+
 
 export default function Home() {
   return (

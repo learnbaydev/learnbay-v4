@@ -8,13 +8,16 @@ const raleway = Raleway({
   fallback: ["Arial", "sans-serif"],
 });
 
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={raleway.className} style={{margin:"0"}}>{children}</body>
-      <GoogleTagManager gtmId="GTM-NN8XWH8" />
+      <head>
+        {/* Add head content here if needed */}
+      </head>
+      <body className={raleway.className} style={{ margin: "0" }}>
+        {children}
+        <GoogleTagManager gtmId="GTM-NN8XWH8" />
+      </body>
     </html>
   );
 }

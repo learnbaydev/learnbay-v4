@@ -1,0 +1,22 @@
+{
+    "header": {
+      "title": "Welcome to Page  nepage ",
+      "subtitle": "This is the subtitle for Page 1",
+      "para": "Para is here 1"
+    },
+    "secondSection": {
+      "comp": "second heading",
+      "secondPara": "this is para"
+      
+      },
+
+      "third": {
+
+        "head":"THird Section",
+        "imgthird":""
+
+
+      }
+   
+  }
+  

@@ -18,6 +18,7 @@ const nextConfig = {
     // nextScriptWorkers: true,
   },
 
+  
   reactStrictMode: true,
   images: {
     remotePatterns: [

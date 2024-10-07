@@ -1,3 +1,5 @@
+
+'use client'
 import React, { useState } from "react";
 import Styles from "./domainElcetive.module.css";
 import Image from "next/image";
